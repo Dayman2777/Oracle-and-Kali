@@ -21,109 +21,196 @@ The objective of this guide is to illustrate the step-by-step procedure for sett
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Launch the shell and type- sudo apt update: <br/>
-<img src="https://i.imgur.com/8n7r4Mu.png" height="80%" width="80%" alt="Open you shell and type- sudo apt update."/>
+To begin, please initiate the download of VirtualBox from Oracle by visiting the provided web address:
+https://www.virtualbox.org/:
+<br/>
+<img src="https://i.imgur.com/Z2hBLdQ.png" height="80%" width="80%" alt="Virtual Box download."/>
 <br />
 <br />
-Type password:  <br/>
-<img src="https://i.imgur.com/uVZ3j97.png" height="80%" width="80%" alt="Type in your Root password."/>
+Locate your download and run Virtualbox-x.x.x-Win.exe:
+<br/>
+<img src="https://i.imgur.com/kWP8CEp.png" height="80%" width="80%" alt="Run exe."/>
 <br />
 <br />
-Wait for update to complete: <br/>
-<img src="https://i.imgur.com/i3C45yA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Follow the download Wizard:
+<br/>
+<img src="https://i.imgur.com/ducFh8a.png" height="80%" width="80%" alt="Wizard steps"/>
 <br />
 <br />
-Launch your web browser; in this tutorial, we've utilized Firefox. Begin by searching for "Nessus Essentials download" or use the following link:
-https://www.tenable.com/downloads/nessus?loginAttempted=true: <br />
-<img src="https://i.imgur.com/KJdXxpk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/nMuuu4u.png" height="80%" width="80%" alt="Wizard Steps"/>
+<br />
+<img src="https://i.imgur.com/odaN9K6.png" height="80%" width="80%" alt="Wizard Steps"/>
+<br />
+<img src="https://i.imgur.com/SmOEHzp.png" height="80%" width="80%" alt="Wizard Steps"/> 
+<br />
+<img src="https://i.imgur.com/SmOEHzp.png" height="80%" width="80%" alt="Wizard Steps"/>
+<br />
+<img src="https://i.imgur.com/lTYravc.png" height="80%" width="80%" alt="Wizard Steps"/>
+<br />
+<img src="https://i.imgur.com/vy0KcMZ.png" height="80%" width="80%" alt="Wizard Steps"/> 
+<br />
+<img src="https://i.imgur.com/iviTC2c.png" height="80%" width="80%" alt="Wizard Steps"/> 
 <br />
 <br />
-After reaching the download site, ensure that you have selected the latest version by clicking the drop-down menu for "Version." Next, navigate to the "Platform" section and choose the Nessus version compatible with Debian that matches your Kali Linux version. For this tutorial, we're utilizing the "Linux-Debian-amd64" option. Once you've made your selection, click on the "Download" button and agree to the terms and conditions:  <br/>
-<img src="https://i.imgur.com/Ca5DXkq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Once you have completed the setup wizard and checked the "Start Oracle VM VirtualBox 7.0.10 after installation" option, Oracle will open:  
+<br/>
+<img src="https://i.imgur.com/eXeozQZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Once the download is finished, clear your terminal and navigate to the "Downloads" directory by using the "cd" command:  <br/>
-<img src="https://i.imgur.com/ZptPlYh.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Now we need to download Kali Linux, first go to: https://www.kali.org/ click "Installer Images"
+<br/>
+<img src="https://i.imgur.com/3ws41co.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Employ the "ls" command to inspect the Nessus download in your directory:  <br/>
-<img src="https://i.imgur.com/CmwwwGe.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+For our installation, we will opt for the 64-bit version:
+<br/>
+<img src="https://i.imgur.com/Lqblxc9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Now we're going to run- sudo dpkg -i Nessus-10.6.1-debian_amd64.deb. Type password if needed: <br/>
-<img src="https://i.imgur.com/Y6xfP4I.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+We can now make a Virtual machine: 
+In Oracle, we need create a new Virtual machine by selecting "New".
+<br/>
+<img src="https://i.imgur.com/J1G7FtK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Once the download has finished, you will receive the login information for accessing Nessus.Select the disk:  <br/>
-<img src="https://i.imgur.com/g3yJbS4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Name your VM: 
+<br/>
+<img src="https://i.imgur.com/938kYaK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-First step is to run command- /bin/systemctl start nessusd.service: <br/>
-<img src="https://i.imgur.com/EaGMuD7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Pick your ISO: <br/>
+<img src="https://i.imgur.com/llHpeTH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-You'll be asked for your password:  <br/>
-<img src="https://i.imgur.com/jSNw5iV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+After those 2 fields are filled out click "Next":  
+<br/>
+<img src="https://i.imgur.com/6YtmGAK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Now, open your web browser and enter the address provided in the second step. In this case, it was:
- https://kali5:8834: <br/>
-<img src="https://i.imgur.com/J2Zzq29.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Next, we must configure the hardware settings, ensuring that we do not allocate all available resources from your machine. We will allocate 2 cores and 4GB of RAM. When specifying RAM, multiply the desired amount by 1024. For example, 4GB of RAM translates to 4 x 1024 = 4096. Once you've entered these values, click on the "Next" button:
+<br/>
+<img src="https://i.imgur.com/qmKllkT.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Accept the risk by clicking "Advanced" and "Accept the Risk and Continue":  <br/>
-<img src="https://i.imgur.com/mzoE025.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Now, we'll proceed with the creation of the hard drive. Since we're utilizing SIEM tools, it's advisable to allocate ample storage for logs. In this instance, we'll allocate 25GB of storage. Once you've determined the storage amount, click the "Next" button: 
+<br/>
+<img src="https://i.imgur.com/aNlC7Lf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-At this point, you should be on the Welcome screen. Click the "Continue" button:  <br/>
-<img src="https://i.imgur.com/H7ynGzk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Review your selections and hit "Finish": 
+<br/>
+<img src="https://i.imgur.com/0FzMng8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br/>
 <br />
- We're going to select "Register for Nessus Essentials", click "Continue": <br />
-<img src="https://i.imgur.com/u7GHW7I.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Find your machine and double-click on it to access it:
+<br />
+<img src="https://i.imgur.com/UuNa9wN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Enter your information for the service:  <br/>
-<img src="https://i.imgur.com/d2ENEk8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Kali Linux will take you through the installation Wizard:
+<br/>
+<img src="https://i.imgur.com/rWoaT2i.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Once you've completed the information, you'll be provided with activation code: <br/>
-<img src="https://i.imgur.com/orSFmVV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+For this installation we're going to select "Graphical install":
+<br/>
+<img src="https://i.imgur.com/zT9TDmd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Generate a username and password of your choice, then click the "Submit" button:  <br/>
-<img src="https://i.imgur.com/CwfudPh.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Select your language and click "Continue".
+<br />
+<img src="https://i.imgur.com/DMiILbw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-After completing your username and password you'll go through a Initializing screen:  <br/>
-<img src="https://i.imgur.com/BEEkyXb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Select your location and click "Continue".
+<br />
+<img src="https://i.imgur.com/DH4sdko.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Following the Initializing screen, you will be directed to the Nessus Home page. Please be patient as everything updates and completes the installation. You will notice a loading icon at the top right corner, and when it disappears, you can initiate a Nessus scan:  <br/>
-<img src="https://i.imgur.com/EdJHusD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Select your Keyboard preference, then click "Continue": 
+<br/>
+<img src="https://i.imgur.com/MdpbdcR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Nessus will inform you when this process is finished and prompt you to initiate your scan. In this tutorial, please click on the "Close" option:  <br/>
-<img src="https://i.imgur.com/rk2Axf2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
- <br />
- <br />
- On the top right side you'll see "New Scan": <br/>
-<img src="https://i.imgur.com/tV0BYQY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Name your machine, we're going with Kali5. Then select "Continue":
+<br/>
+<img src="https://i.imgur.com/Q3OLbxz.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Click "Advance Scan":  <br/>
-<img src="https://i.imgur.com/MV4XNak.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+If you have a domain, put that information in. If you don't just click "Continue":
+<br/>
+<img src="https://i.imgur.com/7XrKP7n.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-You can now perform a more comprehensive scan. In this tutorial, we'll name the initial scan "Scan1" and configure it with the specific IP addresses to be scanned. Once you've filled in all the necessary fields and saved the settings, you'll be returned to the home screen: <br/>
-<img src="https://i.imgur.com/3dKtOwg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Give your user a name, we went with Kali5. Then click "Continue":
+<br/>
+<img src="https://i.imgur.com/LEjSNmQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Next, you'll find your scan listed, and on the right-hand side, click the play button to initiate it:  <br/>
-<img src="https://i.imgur.com/5WGLiNU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Add your password for the Root user. Click "Continue":
+<br/>
+<img src="https://i.imgur.com/TzZt9sQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Once the scan has finished, you can access the scan results to identify vulnerabilities within your network. The Essentials package grants you the ability to scan up to 16 IP addresses for free. Always remember that conducting scans on networks without proper authorization is illegal:  <br/>
+Choose your time zone and click "Continue":
+<br/>
+<img src="https://i.imgur.com/K2WHIdd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+If you don't need to partition your hard drive choose "Guided -use entire disk":
+<br/>
+<img src="https://i.imgur.com/TlgeHmj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Choose the hard drive we created earlier, the select "Continue":
+<br/>
+<img src="https://i.imgur.com/vWgdgEn.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+We're going to choose "All files in one partition (recommended for new users)", then click "Continue":
+<br/>
+<img src="https://i.imgur.com/DzVy7g4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Verify the hard drive is correct, make sure "Finish partitioning and write changes to disk". Click "Continue":
+<br/>
+<img src="https://i.imgur.com/1gTaPDj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Verify your hard drive has been partition correctly and select "Yes". Then we click "Continue":
+<br/>
+<img src="https://i.imgur.com/LJFCfhA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+We've opted for the default selections, but you have the option to choose Gnome if you prefer. It will become available later in the installation process. Once you have made all your selections, click on "Continue.":
+<br/>
+<img src="https://i.imgur.com/IngqoCf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+We've created a new hard drive at the beginning, select "Yes", and click "Continue":
+<br/>
+<img src="https://i.imgur.com/t7XEYbG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Select our hard drive and click "Continue":
+<br/>
+<img src="https://i.imgur.com/mooN8bG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+When the installation is complete, you'll be prompted to reboot the VM. Click "Continue":
+<br/>
+<img src="https://i.imgur.com/qlyTzPB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Please be patient for a few moments, and you will be prompted to enter the username and password that we previously set up. After entering this information, click on "Log in.":
+<br/>
+<img src="https://i.imgur.com/12RIqhy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Once you've successfully logged in, you've completed the installation of Kali Linux. Make sure to perform any necessary updates for Kali and enjoy your newly installed operating system!:
+<br/>
+<img src="https://i.imgur.com/2yTxXVp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
 
 </p>
 
