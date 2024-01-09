@@ -43,8 +43,6 @@ Follow the download Wizard:
 <br />
 <img src="https://i.imgur.com/SmOEHzp.png" height="80%" width="80%" alt="Wizard Steps"/> 
 <br />
-<img src="https://i.imgur.com/SmOEHzp.png" height="80%" width="80%" alt="Wizard Steps"/>
-<br />
 <img src="https://i.imgur.com/lTYravc.png" height="80%" width="80%" alt="Wizard Steps"/>
 <br />
 <img src="https://i.imgur.com/vy0KcMZ.png" height="80%" width="80%" alt="Wizard Steps"/> 
