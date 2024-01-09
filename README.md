@@ -55,7 +55,9 @@ Once you have completed the setup wizard and checked the "Start Oracle VM Virtua
 <img src="https://i.imgur.com/eXeozQZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Now we need to download Kali Linux, first go to: https://www.kali.org/ click "Installer Images"
+Now we need to download Kali Linux, first go to: 
+<br />
+https://www.kali.org/ click "Installer Images"
 <br/>
 <img src="https://i.imgur.com/3ws41co.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
