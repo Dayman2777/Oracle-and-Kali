@@ -37,7 +37,6 @@ Follow the download Wizard:
 <br/>
 <img src="https://i.imgur.com/ducFh8a.png" height="80%" width="80%" alt="Wizard steps"/>
 <br />
-<br />
 <img src="https://i.imgur.com/nMuuu4u.png" height="80%" width="80%" alt="Wizard Steps"/>
 <br />
 <img src="https://i.imgur.com/odaN9K6.png" height="80%" width="80%" alt="Wizard Steps"/>
