@@ -22,8 +22,9 @@ The objective of this guide is to illustrate the step-by-step procedure for sett
 
 <p align="center">
 To begin, please initiate the download of VirtualBox from Oracle by visiting the provided web address:
+<br />
 https://www.virtualbox.org/:
-<br/>
+<br />
 <img src="https://i.imgur.com/Z2hBLdQ.png" height="80%" width="80%" alt="Virtual Box download."/>
 <br />
 <br />
